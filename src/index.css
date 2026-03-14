@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: visible;
+    background-color: #F6F6F6;
+}
+
+.card {
+    @apply absolute w-[35vw] top-[-1%] right-[-1%] z-0
+}
+
+@media (max-width: 950px) {
+    .card {
+        @apply hidden
+    }
+}
+
+
+
+/* @media  (min-width: 700px) and (max-width: 900px) {
+    .nav ul {
+        font-size: 9px;
+    }
+} */
