@@ -29,7 +29,7 @@ const Navbar = () => {
             </span>
           </div>
           <button
-            className='md:hidden lg:hidden'
+            className='md:hidden lg:hidden cursor-pointer'
             onClick={() => setMenuOpen(true)}
           >
             <GiHamburgerMenu />
@@ -59,10 +59,9 @@ const Navbar = () => {
               menuOpen ? "translate-x-0" : "translate-x-full"
             } z-50`}
           >
-            <button className='p-4' onClick={() => setMenuOpen(false)}>
+            <button className='p-4 cursor-pointer' onClick={() => setMenuOpen(false)}>
               ✕
             </button>
-            {menuOpen && (
               <div className='flex items-start px-10 text-[#6a6a6a] gap-10 w-full'>
                 <ul className="flex flex-col gap-10">
                   <li><IoMdHome className="size-6"/></li>
@@ -89,7 +88,6 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-            )}
           </div>
         </div>
       </nav>
